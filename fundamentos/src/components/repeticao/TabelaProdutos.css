@@ -1,0 +1,23 @@
+.tabela {
+  width: 100%;
+}
+
+.tabela > table {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-collapse: collapse;
+}
+
+.tabela th {
+  background-color: #bbb;
+  padding: 5px;
+}
+
+.tabela > table td {
+  border: 1px solid #aaa;
+  padding: 5px 0;
+}
+
+.par {
+  background-color: #ccc;
+}

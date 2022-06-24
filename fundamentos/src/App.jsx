@@ -11,6 +11,8 @@ import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 
 const App = () => {
   return (
@@ -18,6 +20,15 @@ const App = () => {
       <h1>Fundamentos React</h1>
 
       <div className="cards">
+
+        <Card title="#08 - Renderização Condicional" color="#ED584E">
+          <ParOuImpar numero={19}/>
+        </Card>
+
+        <Card title="#07 - Desafio Repetição" color="#006B14">
+          <TabelaProdutos />
+        </Card>
+
         <Card title="#06 - Repetição" color="#7300A8">
           <ListaAlunos />
         </Card>
