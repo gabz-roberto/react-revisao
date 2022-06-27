@@ -1,0 +1,18 @@
+.contador h5 {
+  font-size: 20px;
+}
+.contador button {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #004457;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.contador input {
+  padding: 5px;
+  font-size: 1.2em;
+}

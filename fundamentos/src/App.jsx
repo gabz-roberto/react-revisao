@@ -17,6 +17,7 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/controlado/Input";
+import Contador from "./components/contador/Contador";
 
 const App = () => {
   return (
@@ -24,6 +25,10 @@ const App = () => {
       <h1>Fundamentos React</h1>
 
       <div className="cards">
+
+        <Card title="#12 - Contador" color="#004457">
+          <Contador  numeroInicial={1} />
+        </Card>
 
         <Card title="#11 - Componente Controlado" color="#FF6C00">
           <Input />

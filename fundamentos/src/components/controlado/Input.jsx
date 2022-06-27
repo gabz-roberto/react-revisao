@@ -12,9 +12,9 @@ const Input = () => {
     <div className="input">
       <input type="text" value={valor} onChange={handleInput} placeholder="Componente Controlado"/>
       {/* Para alterar um valor controlado é necessário passar uma função que recebe o evento e altera o valor do estado */}
-      <input type="text" value={valor} readOnly placeholder="Componente Não Controlado"/>
+      <input type="text" value={valor} readOnly placeholder="Componente de Leitura"/>
       {/* Para componentes somente leitura é indicado utilizar o parâmetro readOnly */}
-      <input type="text" value={undefined} />
+      <input type="text" value={undefined} placeholder="Componente Não Controlado"/>
       {/* Outra opção para componente não controlado é utilizar undefined como valor */}
       <h4>{valor}</h4>
     </div>
