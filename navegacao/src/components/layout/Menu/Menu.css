@@ -1,0 +1,30 @@
+.menu {
+  display: flex;
+  flex-basis: 250px;
+  background-color: #006c8c;
+}
+
+.menu nav {
+  flex: 1;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  display: flex;
+}
+.menu li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1.4em;
+  margin: 10px 0;
+  padding: 8px;
+  flex: 1;
+  transition: 0.2s;
+}
+
+.menu li a:hover {
+  background-color: #005c78;
+}
