@@ -1,0 +1,15 @@
+.mega button {
+    padding: 10px;
+    background-color: rgb(28, 84, 148);
+    color: #FFF;
+    font-size: 1.2rem;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.mega button:hover {
+    background-color: rgb(36, 101, 175);
+}

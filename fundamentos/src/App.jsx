@@ -18,6 +18,7 @@ import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/controlado/Input";
 import Contador from "./components/contador/Contador";
+import Mega from './components/mega/Mega'
 
 const App = () => {
   return (
@@ -25,6 +26,10 @@ const App = () => {
       <h1>Fundamentos React</h1>
 
       <div className="cards">
+
+        <Card title="#13 - Desafio Megasena" color="#526C87">
+          <Mega qtde={6}/>
+        </Card>
 
         <Card title="#12 - Contador" color="#004457">
           <Contador  numeroInicial={1} />
