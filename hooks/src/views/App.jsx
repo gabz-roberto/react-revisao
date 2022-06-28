@@ -15,7 +15,7 @@ const App = (props) => {
 
   return (
     <div className="App">
-      <dataContext.Provider value={data}>
+      <dataContext.Provider value={{ state: state, setState: setState }}>
         <Router>
           <Menu />
           <Content />
