@@ -6,6 +6,7 @@ import dataContext, { data } from "../data/dataContext";
 
 import Menu from "../components/layout/Menu";
 import Content from "../components/layout/Content";
+import Store from "../data/Store";
 
 import "./App.css";
 
@@ -15,12 +16,14 @@ const App = (props) => {
 
   return (
     <div className="App">
-      <dataContext.Provider value={{ state: state, setState: setState }}>
-        <Router>
-          <Menu />
-          <Content />
-        </Router>
-      </dataContext.Provider>
+      <Store>
+        <dataContext.Provider value={{ state: state, setState: setState }}>
+          <Router>
+            <Menu />
+            <Content />
+          </Router>
+        </dataContext.Provider>
+      </Store>
     </div>
   );
 };
