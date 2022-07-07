@@ -1,0 +1,26 @@
+.header-full {
+  height: 90px;
+  width: 100%;
+  background-color: #05445E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.header-content a {
+  color: #fff;
+  padding: 10px 0;
+  transition: .2s;
+}
+
+.header-content a:hover {
+  color: #e9e9e9;
+}
