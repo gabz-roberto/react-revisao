@@ -1,0 +1,11 @@
+.app {
+  padding: 30px;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+.line {
+  display: flex;
+}
