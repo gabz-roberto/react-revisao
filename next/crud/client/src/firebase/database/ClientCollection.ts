@@ -22,6 +22,7 @@ export default class ClientCollection implements ClientRepository {
   async save(client: Client): Promise<Client> {
     if (client?.id) {
       await this.collection().doc(client.id).set(client);
+      return client;
     } else {
       const docRef = await this.collection().add(client);
       const doc = await docRef.get();

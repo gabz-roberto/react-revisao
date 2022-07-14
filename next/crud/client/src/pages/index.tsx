@@ -1,26 +1,34 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../components/Button";
 import Form from "../components/Form";
 import Layout from "../components/Layout";
 import Table from "../components/Table";
 import Client from "../core/Client";
+import ClientRepository from "../core/ClientRepository";
+import ClientCollection from "../firebase/database/ClientCollection";
 
 export default function Home() {
   const [visible, setVisible] = useState<"table" | "form">("table");
   const [client, setClient] = useState<Client>(Client.default());
+  const [clients, setClients] = useState<Client[]>([]);
 
-  const saveClient = (client: Client) => {
-    console.log(client);
-    setVisible("table");
+  const repo: ClientRepository = new ClientCollection();
+
+  useEffect(() => {
+    receiveAll;
+  }, []);
+
+  const receiveAll = () => {
+    repo.getAll().then((clients) => {
+      setClients(clients);
+      setVisible("table");
+    });
   };
 
-  const clientes = [
-    new Client("Gabriel", 25, "1"),
-    new Client("Claire", 32, "2"),
-    new Client("Leon", 34, "3"),
-    new Client("Ada", 37, "4"),
-    new Client("Chris", 35, "5"),
-  ];
+  const saveClient = async (client: Client) => {
+    await repo.save(client);
+    receiveAll();
+  };
 
   const newClient = () => {
     setClient(Client.default());
@@ -51,7 +59,7 @@ export default function Home() {
               </Button>
             </div>
             <Table
-              clients={clientes}
+              clients={clients}
               clientSelected={clientSelected}
               clientDeleted={clientDeleted}
             ></Table>
