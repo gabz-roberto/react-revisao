@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useState, useEffect} from 'react';
 import Button from "../components/Button";
 import Form from "../components/Form";
 import Layout from "../components/Layout";
@@ -11,7 +11,6 @@ export default function Home() {
   const [visible, setVisible] = useState<"table" | "form">("table");
   const [client, setClient] = useState<Client>(Client.default());
   const [clients, setClients] = useState<Client[]>([]);
-
   const repo: ClientRepository = new ClientCollection();
 
   useEffect(() => {

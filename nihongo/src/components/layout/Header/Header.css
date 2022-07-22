@@ -1,0 +1,41 @@
+.header-full {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Press Start 2P", cursive;
+  padding: 0 40px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-title {
+  color: #222;
+}
+
+.title-red {
+  color: crimson;
+}
+
+.header-menu {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-menu > a {
+  padding: 15px 10px;
+  color: #222;
+  border-radius: 10px;
+  transition: .2s;
+}
+
+.header-menu > a:hover {
+    background-color: #ffffff50;
+}
