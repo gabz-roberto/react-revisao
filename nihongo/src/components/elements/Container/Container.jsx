@@ -1,13 +1,18 @@
-import React from 'react'
+import React from "react";
+import QuizArea from "../QuizArea/QuizArea";
+import Scoreboard from "../Scoreboar/Scoreboard";
 
-import './Container.css'
+import "./Container.css";
 
 const Container = (props) => {
   return (
-    <div className='container'>
-        {props.children}
+    <div className="container">
+      <QuizArea>{props.children}</QuizArea>
+      <Scoreboard>
+        <h2>teste</h2>
+      </Scoreboard>
     </div>
-  )
-}
+  );
+};
 
-export default Container
+export default Container;
