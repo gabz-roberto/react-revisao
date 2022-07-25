@@ -1,5 +1,7 @@
-import Card from "./components/Card";
-import Interval from "./components/Interval";
+import Interval from "./components/Interval/Interval";
+import Average from "./components/Average/Average";
+import Random from "./components/Random/Random";
+import Sum from "./components/Sum/Sum";
 import "./App.css";
 
 function App() {
@@ -10,9 +12,9 @@ function App() {
         <Interval></Interval>
       </div>
       <div className="line">
-        <Card title="Card #2" blue>Y</Card>
-        <Card title="Card #3" purple>A</Card>
-        <Card title="Card #4" green>B</Card>
+        <Average></Average>
+        <Sum></Sum>
+        <Random></Random>
       </div>
     </div>
   );
