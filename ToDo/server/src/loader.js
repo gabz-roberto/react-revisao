@@ -1,3 +1,3 @@
-const app = require("./config/server");
-require("./config/db");
-require("./config/routes/routes")(app);
+const server = require("./config/server");
+require("./config/database");
+require("./config/routes")(server);
