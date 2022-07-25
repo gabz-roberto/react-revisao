@@ -15,3 +15,5 @@ app.listen(PORT, (err) => {
     console.log(`Servidor executando na porta: ${PORT}`);
   }
 });
+
+module.exports = app;
