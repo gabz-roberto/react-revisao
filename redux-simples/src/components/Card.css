@@ -2,8 +2,54 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  background-color: gray;
   text-align: center;
   margin: 10px;
+}
+
+.card .header {
+  display: flex;
+  justify-content: center;
+}
+
+.header .title {
+  padding: 10px;
+  font-weight: 700;
+  flex: 1;
+  background-color: #00000033;
+}
+
+.card .content {
+  padding: 20px;
+}
+
+.card.red .header {
+  color: #eee;
+  background-color: #dc143c;
+}
+.card.red .content {
+  background-color: #68091c;
+}
+
+.card.blue .header {
+  color: #eee;
+  background-color: #141bdc;
+}
+.card.blue .content {
+  background-color: #1a0968;
+}
+
+.card.purple .header {
+  color: #eee;
+  background-color: #7514dc;
+}
+.card.purple .content {
+  background-color: #3f0968;
+}
+
+.card.green .header {
+  color: #eee;
+  background-color: #14c723;
+}
+.card.green .content {
+  background-color: #09680f;
 }
