@@ -1,6 +1,6 @@
 import React from "react";
 import QuizArea from "../QuizArea/QuizArea";
-import Scoreboard from "../Scoreboar/Scoreboard";
+import Scoreboard from "../Scoreboard/Scoreboard";
 
 import "./Container.css";
 
